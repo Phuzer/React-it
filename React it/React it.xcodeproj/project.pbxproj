@@ -1,0 +1,1227 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5000A0781D3BD1B700FB1479 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5000A0771D3BD1B700FB1479 /* AppDelegate.swift */; };
+		5000A07D1D3BD1B700FB1479 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5000A07B1D3BD1B700FB1479 /* Main.storyboard */; };
+		5000A0821D3BD1B700FB1479 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5000A0801D3BD1B700FB1479 /* LaunchScreen.storyboard */; };
+		500C31E41E32869500A1E174 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 500C31E31E32869500A1E174 /* HealthKit.framework */; };
+		5017AB021DDCCF8D00C90332 /* UserController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5017AB011DDCCF8D00C90332 /* UserController.swift */; };
+		5017AB261DDCFD8900C90332 /* ProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5017AB251DDCFD8900C90332 /* ProfileController.swift */; };
+		5017AB281DDD146A00C90332 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5017AB271DDD146A00C90332 /* Assets.xcassets */; };
+		5023B76C1D4C096A00FD4458 /* OpinionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5023B76B1D4C096A00FD4458 /* OpinionController.swift */; };
+		504648B61E18411000B1D73D /* WatchReactionResponseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504648B51E18411000B1D73D /* WatchReactionResponseController.swift */; };
+		505A6D5E1DDA72AA0045B38A /* OpinionsEmotionsTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505A6D5D1DDA72AA0045B38A /* OpinionsEmotionsTableCell.swift */; };
+		506C044E1E147FFB00B8805E /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50BE5B5C1DDB70AF00132081 /* Alamofire.framework */; };
+		506C04521E14800A00B8805E /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50BE5B5C1DDB70AF00132081 /* Alamofire.framework */; };
+		506C04531E14800A00B8805E /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 50BE5B5C1DDB70AF00132081 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		506C045B1E1482B700B8805E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 506C045A1E1482B700B8805E /* Assets.xcassets */; };
+		506C046E1E14843800B8805E /* FriendRowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506C045C1E14843800B8805E /* FriendRowController.swift */; };
+		506C046F1E14843800B8805E /* GlobalVariables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506C045D1E14843800B8805E /* GlobalVariables.swift */; };
+		506C04701E14843800B8805E /* HeartController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506C045E1E14843800B8805E /* HeartController.swift */; };
+		506C04711E14843800B8805E /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506C045F1E14843800B8805E /* InterfaceController.swift */; };
+		506C04721E14843800B8805E /* MatchRowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506C04601E14843800B8805E /* MatchRowController.swift */; };
+		506C04731E14843800B8805E /* MomentRowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506C04611E14843800B8805E /* MomentRowController.swift */; };
+		506C04751E14843800B8805E /* testeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506C04631E14843800B8805E /* testeController.swift */; };
+		506C04761E14843800B8805E /* WatchEmotionResponseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506C04641E14843800B8805E /* WatchEmotionResponseController.swift */; };
+		506C04771E14843800B8805E /* WatchEmotionsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506C04651E14843800B8805E /* WatchEmotionsController.swift */; };
+		506C04781E14843800B8805E /* WatchMatchesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506C04661E14843800B8805E /* WatchMatchesController.swift */; };
+		506C04791E14843800B8805E /* WatchMomentController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506C04671E14843800B8805E /* WatchMomentController.swift */; };
+		506C047A1E14843800B8805E /* WatchMomentFourthController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506C04681E14843800B8805E /* WatchMomentFourthController.swift */; };
+		506C047B1E14843800B8805E /* WatchMomentsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506C04691E14843800B8805E /* WatchMomentsController.swift */; };
+		506C047C1E14843800B8805E /* WatchMomentSecondController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506C046A1E14843800B8805E /* WatchMomentSecondController.swift */; };
+		506C047D1E14843800B8805E /* WatchMomentThirdController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506C046B1E14843800B8805E /* WatchMomentThirdController.swift */; };
+		506C047E1E14843800B8805E /* WatchOpinionResponseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506C046C1E14843800B8805E /* WatchOpinionResponseController.swift */; };
+		506C047F1E14843800B8805E /* WatchOpinionsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506C046D1E14843800B8805E /* WatchOpinionsController.swift */; };
+		506E7B5F1D57FB99003D4D67 /* Platform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506E7B5E1D57FB99003D4D67 /* Platform.swift */; };
+		506E7B751D60CFC8003D4D67 /* MomentController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506E7B741D60CFC8003D4D67 /* MomentController.swift */; };
+		5086DF731DD52969006EE180 /* VideoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5086DF721DD52969006EE180 /* VideoController.swift */; };
+		50A508D51DD391E50062FC01 /* MatchesTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50A508D41DD391E50062FC01 /* MatchesTableCell.swift */; };
+		50A508D71DD3A71D0062FC01 /* MomentsTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50A508D61DD3A71D0062FC01 /* MomentsTableCell.swift */; };
+		50A56F8C1E21763B00619A73 /* VideoTesteController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50A56F8B1E21763B00619A73 /* VideoTesteController.swift */; };
+		50A6A3FD1E2404C200F6CA96 /* MonitoredMatchesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50A6A3FC1E2404C200F6CA96 /* MonitoredMatchesController.swift */; };
+		50A777051E1DCDEF005A8787 /* WatchNotificationResponseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50A777041E1DCDEF005A8787 /* WatchNotificationResponseController.swift */; };
+		50A777071E20474C005A8787 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50A777061E20474C005A8787 /* LoginController.swift */; };
+		50AEF9DC1E12F53B0062FA19 /* SCLAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50AEF9DB1E12F53B0062FA19 /* SCLAlertView.swift */; };
+		50AEF9E81E12F5780062FA19 /* SCLExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50AEF9E71E12F5780062FA19 /* SCLExtensions.swift */; };
+		50AEFA601E1312B60062FA19 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50AEFA5E1E1312B60062FA19 /* Interface.storyboard */; };
+		50AEFA691E1312B60062FA19 /* React it Watchkit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 50AEFA681E1312B60062FA19 /* React it Watchkit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		50AEFA721E1312B60062FA19 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50AEFA711E1312B60062FA19 /* ExtensionDelegate.swift */; };
+		50AEFA761E1312B60062FA19 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50AEFA751E1312B60062FA19 /* Assets.xcassets */; };
+		50AEFA7A1E1312B60062FA19 /* React it Watchkit.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 50AEFA5C1E1312B60062FA19 /* React it Watchkit.app */; };
+		50AF4A9D1DCFB39B006B6346 /* EmotionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50AF4A9C1DCFB39B006B6346 /* EmotionController.swift */; };
+		50BE5B401DDB700600132081 /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50BE5B341DDB6F8D00132081 /* Charts.framework */; };
+		50BE5B411DDB700600132081 /* Charts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 50BE5B341DDB6F8D00132081 /* Charts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		50BE5B5D1DDB70C500132081 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50BE5B501DDB70AF00132081 /* Alamofire.framework */; };
+		50BE5B5E1DDB70C500132081 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 50BE5B501DDB70AF00132081 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		50BF3F461D4BAD5400482E27 /* RegisterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50BF3F451D4BAD5400482E27 /* RegisterController.swift */; };
+		50BF3F481D4BADB900482E27 /* MomentsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50BF3F471D4BADB900482E27 /* MomentsController.swift */; };
+		50C4E4441DD24B6A00D29CE3 /* MatchesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C4E4431DD24B6A00D29CE3 /* MatchesController.swift */; };
+		50C5F28E1E1485E50002B504 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C5F28D1E1485E50002B504 /* NotificationController.swift */; };
+		50D370A61DD6865F00AA3057 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D370A51DD6865F00AA3057 /* TabBarController.swift */; };
+		50D370A81DD68C0E00AA3057 /* ResponseOpinionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D370A71DD68C0E00AA3057 /* ResponseOpinionController.swift */; };
+		50D370AA1DD68C2500AA3057 /* ResponseEmotionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D370A91DD68C2500AA3057 /* ResponseEmotionController.swift */; };
+		50D370AC1DD68F3000AA3057 /* ResponseVideoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D370AB1DD68F3000AA3057 /* ResponseVideoController.swift */; };
+		50D68FCC1E14A19F00C84B75 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50D68FCB1E14A19F00C84B75 /* HealthKit.framework */; };
+		50E3065C1DF206DE00677717 /* OpinionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50E3065B1DF206DE00677717 /* OpinionView.xib */; };
+		50E3065E1DF2081800677717 /* EmotionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50E3065D1DF2081800677717 /* EmotionView.xib */; };
+		50E306641DF209A900677717 /* OpinionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E306631DF209A900677717 /* OpinionView.swift */; };
+		50E306661DF209B600677717 /* EmotionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E306651DF209B600677717 /* EmotionView.swift */; };
+		50E3066A1DF238FE00677717 /* NotificationResponseOpinionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E306691DF238FE00677717 /* NotificationResponseOpinionController.swift */; };
+		50E3066C1DF23A2600677717 /* NotificationResponseEmotionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E3066B1DF23A2600677717 /* NotificationResponseEmotionController.swift */; };
+		50EC6C771E2C0B3800E9D8CA /* WatchLoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50EC6C761E2C0B3800E9D8CA /* WatchLoginController.swift */; };
+		50EC6C811E2C1E1900E9D8CA /* SwiftMessages.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50EC6C7E1E2C1E0100E9D8CA /* SwiftMessages.framework */; };
+		50EC6C821E2C1E1900E9D8CA /* SwiftMessages.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 50EC6C7E1E2C1E0100E9D8CA /* SwiftMessages.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		50ED522F1E450B5E00909A23 /* MyReactionsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50ED522E1E450B5E00909A23 /* MyReactionsController.swift */; };
+		50ED52311E450BCC00909A23 /* MyReactionsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50ED52301E450BCC00909A23 /* MyReactionsCell.swift */; };
+		50FB49ED1DEDD0630096B659 /* GlobalVariables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50FB49EC1DEDD0630096B659 /* GlobalVariables.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		506C04541E14800A00B8805E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 50BE5B441DDB70AF00132081 /* Alamofire.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = E4202FCD1B667AA100C997FB;
+			remoteInfo = "Alamofire watchOS";
+		};
+		50AEFA6A1E1312B60062FA19 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5000A06C1D3BD1B700FB1479 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 50AEFA671E1312B60062FA19;
+			remoteInfo = "React it Watchkit Extension";
+		};
+		50AEFA781E1312B60062FA19 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5000A06C1D3BD1B700FB1479 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 50AEFA5B1E1312B60062FA19;
+			remoteInfo = "React it Watchkit";
+		};
+		50BE5B331DDB6F8D00132081 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 50BE5B2D1DDB6F8C00132081 /* Charts.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 06165F241D8110E600722320;
+			remoteInfo = Charts;
+		};
+		50BE5B351DDB6F8D00132081 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 50BE5B2D1DDB6F8C00132081 /* Charts.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 06B120D51D811E6200D14B02;
+			remoteInfo = ChartsRealm;
+		};
+		50BE5B371DDB6F8D00132081 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 50BE5B2D1DDB6F8C00132081 /* Charts.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 06165F2E1D8110E600722320;
+			remoteInfo = ChartsTests;
+		};
+		50BE5B421DDB700600132081 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 50BE5B2D1DDB6F8C00132081 /* Charts.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 06165F231D8110E600722320;
+			remoteInfo = Charts;
+		};
+		50BE5B4F1DDB70AF00132081 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 50BE5B441DDB70AF00132081 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F8111E3319A95C8B0040E7D1;
+			remoteInfo = "Alamofire iOS";
+		};
+		50BE5B511DDB70AF00132081 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 50BE5B441DDB70AF00132081 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F8111E3E19A95C8B0040E7D1;
+			remoteInfo = "Alamofire iOS Tests";
+		};
+		50BE5B531DDB70AF00132081 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 50BE5B441DDB70AF00132081 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4DD67C0B1A5C55C900ED2280;
+			remoteInfo = "Alamofire macOS";
+		};
+		50BE5B551DDB70AF00132081 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 50BE5B441DDB70AF00132081 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F829C6B21A7A94F100A2CD59;
+			remoteInfo = "Alamofire macOS Tests";
+		};
+		50BE5B571DDB70AF00132081 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 50BE5B441DDB70AF00132081 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4CF626EF1BA7CB3E0011A099;
+			remoteInfo = "Alamofire tvOS";
+		};
+		50BE5B591DDB70AF00132081 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 50BE5B441DDB70AF00132081 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4CF626F81BA7CB3E0011A099;
+			remoteInfo = "Alamofire tvOS Tests";
+		};
+		50BE5B5B1DDB70AF00132081 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 50BE5B441DDB70AF00132081 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E4202FE01B667AA100C997FB;
+			remoteInfo = "Alamofire watchOS";
+		};
+		50BE5B5F1DDB70C500132081 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 50BE5B441DDB70AF00132081 /* Alamofire.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = F8111E3219A95C8B0040E7D1;
+			remoteInfo = "Alamofire iOS";
+		};
+		50EC6C7D1E2C1E0100E9D8CA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 50EC6C781E2C1E0100E9D8CA /* SwiftMessages.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 86B48AEC1D5A41C900063E2B;
+			remoteInfo = SwiftMessages;
+		};
+		50EC6C7F1E2C1E0100E9D8CA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 50EC6C781E2C1E0100E9D8CA /* SwiftMessages.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 86B48AF51D5A41C900063E2B;
+			remoteInfo = SwiftMessagesTests;
+		};
+		50EC6C831E2C1E1900E9D8CA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 50EC6C781E2C1E0100E9D8CA /* SwiftMessages.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 86B48AEB1D5A41C900063E2B;
+			remoteInfo = SwiftMessages;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		501F7A481DD7C945002496AF /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				50BE5B411DDB700600132081 /* Charts.framework in Embed Frameworks */,
+				50BE5B5E1DDB70C500132081 /* Alamofire.framework in Embed Frameworks */,
+				50EC6C821E2C1E1900E9D8CA /* SwiftMessages.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		506C04561E14800A00B8805E /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				506C04531E14800A00B8805E /* Alamofire.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50AEFA7E1E1312B60062FA19 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				50AEFA691E1312B60062FA19 /* React it Watchkit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50CD11851E0737BF001CEFBF /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				50AEFA7A1E1312B60062FA19 /* React it Watchkit.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		5000A0741D3BD1B700FB1479 /* React it.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "React it.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5000A0771D3BD1B700FB1479 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5000A07C1D3BD1B700FB1479 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5000A0811D3BD1B700FB1479 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5000A0831D3BD1B700FB1479 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		500C31E31E32869500A1E174 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+		5017AB011DDCCF8D00C90332 /* UserController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserController.swift; sourceTree = "<group>"; };
+		5017AB251DDCFD8900C90332 /* ProfileController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileController.swift; sourceTree = "<group>"; };
+		5017AB271DDD146A00C90332 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5023B76B1D4C096A00FD4458 /* OpinionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpinionController.swift; sourceTree = "<group>"; };
+		504648B51E18411000B1D73D /* WatchReactionResponseController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WatchReactionResponseController.swift; sourceTree = "<group>"; };
+		504830491DF0801C00E62C27 /* OpinionSharePhone.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = OpinionSharePhone.entitlements; sourceTree = "<group>"; };
+		505A6D5D1DDA72AA0045B38A /* OpinionsEmotionsTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpinionsEmotionsTableCell.swift; sourceTree = "<group>"; };
+		506C04591E14812000B8805E /* React it Watchkit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "React it Watchkit Extension.entitlements"; sourceTree = "<group>"; };
+		506C045A1E1482B700B8805E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		506C045C1E14843800B8805E /* FriendRowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendRowController.swift; sourceTree = "<group>"; };
+		506C045D1E14843800B8805E /* GlobalVariables.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalVariables.swift; sourceTree = "<group>"; };
+		506C045E1E14843800B8805E /* HeartController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeartController.swift; sourceTree = "<group>"; };
+		506C045F1E14843800B8805E /* InterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		506C04601E14843800B8805E /* MatchRowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatchRowController.swift; sourceTree = "<group>"; };
+		506C04611E14843800B8805E /* MomentRowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MomentRowController.swift; sourceTree = "<group>"; };
+		506C04631E14843800B8805E /* testeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = testeController.swift; sourceTree = "<group>"; };
+		506C04641E14843800B8805E /* WatchEmotionResponseController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WatchEmotionResponseController.swift; sourceTree = "<group>"; };
+		506C04651E14843800B8805E /* WatchEmotionsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WatchEmotionsController.swift; sourceTree = "<group>"; };
+		506C04661E14843800B8805E /* WatchMatchesController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WatchMatchesController.swift; sourceTree = "<group>"; };
+		506C04671E14843800B8805E /* WatchMomentController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WatchMomentController.swift; sourceTree = "<group>"; };
+		506C04681E14843800B8805E /* WatchMomentFourthController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WatchMomentFourthController.swift; sourceTree = "<group>"; };
+		506C04691E14843800B8805E /* WatchMomentsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WatchMomentsController.swift; sourceTree = "<group>"; };
+		506C046A1E14843800B8805E /* WatchMomentSecondController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WatchMomentSecondController.swift; sourceTree = "<group>"; };
+		506C046B1E14843800B8805E /* WatchMomentThirdController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WatchMomentThirdController.swift; sourceTree = "<group>"; };
+		506C046C1E14843800B8805E /* WatchOpinionResponseController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WatchOpinionResponseController.swift; sourceTree = "<group>"; };
+		506C046D1E14843800B8805E /* WatchOpinionsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WatchOpinionsController.swift; sourceTree = "<group>"; };
+		506E7B5E1D57FB99003D4D67 /* Platform.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Platform.swift; sourceTree = "<group>"; };
+		506E7B741D60CFC8003D4D67 /* MomentController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MomentController.swift; sourceTree = "<group>"; };
+		5086DF721DD52969006EE180 /* VideoController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoController.swift; sourceTree = "<group>"; };
+		50A508D41DD391E50062FC01 /* MatchesTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatchesTableCell.swift; sourceTree = "<group>"; };
+		50A508D61DD3A71D0062FC01 /* MomentsTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MomentsTableCell.swift; sourceTree = "<group>"; };
+		50A56F8B1E21763B00619A73 /* VideoTesteController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoTesteController.swift; sourceTree = "<group>"; };
+		50A6A3FC1E2404C200F6CA96 /* MonitoredMatchesController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonitoredMatchesController.swift; sourceTree = "<group>"; };
+		50A777031E1DB016005A8787 /* React it Watchkit.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "React it Watchkit.entitlements"; sourceTree = "<group>"; };
+		50A777041E1DCDEF005A8787 /* WatchNotificationResponseController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WatchNotificationResponseController.swift; sourceTree = "<group>"; };
+		50A777061E20474C005A8787 /* LoginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		50AEF9DB1E12F53B0062FA19 /* SCLAlertView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SCLAlertView.swift; sourceTree = "<group>"; };
+		50AEF9E71E12F5780062FA19 /* SCLExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SCLExtensions.swift; sourceTree = "<group>"; };
+		50AEFA5C1E1312B60062FA19 /* React it Watchkit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "React it Watchkit.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		50AEFA5F1E1312B60062FA19 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		50AEFA631E1312B60062FA19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		50AEFA681E1312B60062FA19 /* React it Watchkit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "React it Watchkit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		50AEFA6E1E1312B60062FA19 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		50AEFA711E1312B60062FA19 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		50AEFA751E1312B60062FA19 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		50AEFA771E1312B60062FA19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		50AF4A9C1DCFB39B006B6346 /* EmotionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmotionController.swift; sourceTree = "<group>"; };
+		50BE5B2D1DDB6F8C00132081 /* Charts.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Charts.xcodeproj; path = ../Frameworks/Charts/Charts.xcodeproj; sourceTree = "<group>"; };
+		50BE5B441DDB70AF00132081 /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = ../Frameworks/Alamofire/Alamofire.xcodeproj; sourceTree = "<group>"; };
+		50BF3F451D4BAD5400482E27 /* RegisterController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RegisterController.swift; path = ../RegisterController.swift; sourceTree = "<group>"; };
+		50BF3F471D4BADB900482E27 /* MomentsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MomentsController.swift; sourceTree = "<group>"; };
+		50C4E4431DD24B6A00D29CE3 /* MatchesController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatchesController.swift; sourceTree = "<group>"; };
+		50C5F28D1E1485E50002B504 /* NotificationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		50D370A51DD6865F00AA3057 /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		50D370A71DD68C0E00AA3057 /* ResponseOpinionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponseOpinionController.swift; sourceTree = "<group>"; };
+		50D370A91DD68C2500AA3057 /* ResponseEmotionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponseEmotionController.swift; sourceTree = "<group>"; };
+		50D370AB1DD68F3000AA3057 /* ResponseVideoController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponseVideoController.swift; sourceTree = "<group>"; };
+		50D68FCB1E14A19F00C84B75 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS3.1.sdk/System/Library/Frameworks/HealthKit.framework; sourceTree = DEVELOPER_DIR; };
+		50E3065B1DF206DE00677717 /* OpinionView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OpinionView.xib; sourceTree = "<group>"; };
+		50E3065D1DF2081800677717 /* EmotionView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EmotionView.xib; sourceTree = "<group>"; };
+		50E306631DF209A900677717 /* OpinionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpinionView.swift; sourceTree = "<group>"; };
+		50E306651DF209B600677717 /* EmotionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmotionView.swift; sourceTree = "<group>"; };
+		50E306691DF238FE00677717 /* NotificationResponseOpinionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationResponseOpinionController.swift; sourceTree = "<group>"; };
+		50E3066B1DF23A2600677717 /* NotificationResponseEmotionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationResponseEmotionController.swift; sourceTree = "<group>"; };
+		50EC6C761E2C0B3800E9D8CA /* WatchLoginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WatchLoginController.swift; sourceTree = "<group>"; };
+		50EC6C781E2C1E0100E9D8CA /* SwiftMessages.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SwiftMessages.xcodeproj; path = ../Frameworks/SwiftMessages/SwiftMessages.xcodeproj; sourceTree = "<group>"; };
+		50ED522E1E450B5E00909A23 /* MyReactionsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyReactionsController.swift; sourceTree = "<group>"; };
+		50ED52301E450BCC00909A23 /* MyReactionsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyReactionsCell.swift; sourceTree = "<group>"; };
+		50FB49EC1DEDD0630096B659 /* GlobalVariables.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalVariables.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5000A0711D3BD1B700FB1479 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50EC6C811E2C1E1900E9D8CA /* SwiftMessages.framework in Frameworks */,
+				500C31E41E32869500A1E174 /* HealthKit.framework in Frameworks */,
+				50BE5B401DDB700600132081 /* Charts.framework in Frameworks */,
+				50BE5B5D1DDB70C500132081 /* Alamofire.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50AEFA651E1312B60062FA19 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50D68FCC1E14A19F00C84B75 /* HealthKit.framework in Frameworks */,
+				506C044E1E147FFB00B8805E /* Alamofire.framework in Frameworks */,
+				506C04521E14800A00B8805E /* Alamofire.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5000A06B1D3BD1B700FB1479 = {
+			isa = PBXGroup;
+			children = (
+				50EC6C781E2C1E0100E9D8CA /* SwiftMessages.xcodeproj */,
+				50BE5B441DDB70AF00132081 /* Alamofire.xcodeproj */,
+				50BE5B2D1DDB6F8C00132081 /* Charts.xcodeproj */,
+				5000A0761D3BD1B700FB1479 /* React it */,
+				50AEFA5D1E1312B60062FA19 /* React it Watchkit */,
+				50AEFA6C1E1312B60062FA19 /* React it Watchkit Extension */,
+				5000A0751D3BD1B700FB1479 /* Products */,
+				5046A1251DC7FAC1005C26BF /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		5000A0751D3BD1B700FB1479 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5000A0741D3BD1B700FB1479 /* React it.app */,
+				50AEFA5C1E1312B60062FA19 /* React it Watchkit.app */,
+				50AEFA681E1312B60062FA19 /* React it Watchkit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5000A0761D3BD1B700FB1479 /* React it */ = {
+			isa = PBXGroup;
+			children = (
+				50AEF9E71E12F5780062FA19 /* SCLExtensions.swift */,
+				50AEF9DB1E12F53B0062FA19 /* SCLAlertView.swift */,
+				50FB49EC1DEDD0630096B659 /* GlobalVariables.swift */,
+				504830491DF0801C00E62C27 /* OpinionSharePhone.entitlements */,
+				5017AB271DDD146A00C90332 /* Assets.xcassets */,
+				50BF3F451D4BAD5400482E27 /* RegisterController.swift */,
+				5023B76B1D4C096A00FD4458 /* OpinionController.swift */,
+				50AF4A9C1DCFB39B006B6346 /* EmotionController.swift */,
+				50C4E4431DD24B6A00D29CE3 /* MatchesController.swift */,
+				50BF3F471D4BADB900482E27 /* MomentsController.swift */,
+				506E7B741D60CFC8003D4D67 /* MomentController.swift */,
+				50A6A3FC1E2404C200F6CA96 /* MonitoredMatchesController.swift */,
+				5000A07B1D3BD1B700FB1479 /* Main.storyboard */,
+				5000A0801D3BD1B700FB1479 /* LaunchScreen.storyboard */,
+				506E7B5E1D57FB99003D4D67 /* Platform.swift */,
+				50A508D41DD391E50062FC01 /* MatchesTableCell.swift */,
+				50A508D61DD3A71D0062FC01 /* MomentsTableCell.swift */,
+				505A6D5D1DDA72AA0045B38A /* OpinionsEmotionsTableCell.swift */,
+				50D370A51DD6865F00AA3057 /* TabBarController.swift */,
+				50D370A71DD68C0E00AA3057 /* ResponseOpinionController.swift */,
+				50D370A91DD68C2500AA3057 /* ResponseEmotionController.swift */,
+				50D370AB1DD68F3000AA3057 /* ResponseVideoController.swift */,
+				50E306631DF209A900677717 /* OpinionView.swift */,
+				50E306651DF209B600677717 /* EmotionView.swift */,
+				50E3065B1DF206DE00677717 /* OpinionView.xib */,
+				50E3065D1DF2081800677717 /* EmotionView.xib */,
+				5086DF721DD52969006EE180 /* VideoController.swift */,
+				50E306691DF238FE00677717 /* NotificationResponseOpinionController.swift */,
+				50E3066B1DF23A2600677717 /* NotificationResponseEmotionController.swift */,
+				5017AB251DDCFD8900C90332 /* ProfileController.swift */,
+				5017AB011DDCCF8D00C90332 /* UserController.swift */,
+				50A56F8B1E21763B00619A73 /* VideoTesteController.swift */,
+				5000A0831D3BD1B700FB1479 /* Info.plist */,
+				5000A0771D3BD1B700FB1479 /* AppDelegate.swift */,
+				50ED522E1E450B5E00909A23 /* MyReactionsController.swift */,
+				50ED52301E450BCC00909A23 /* MyReactionsCell.swift */,
+			);
+			path = "React it";
+			sourceTree = "<group>";
+		};
+		5046A1251DC7FAC1005C26BF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				500C31E31E32869500A1E174 /* HealthKit.framework */,
+				50D68FCB1E14A19F00C84B75 /* HealthKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		50AEFA5D1E1312B60062FA19 /* React it Watchkit */ = {
+			isa = PBXGroup;
+			children = (
+				50A777031E1DB016005A8787 /* React it Watchkit.entitlements */,
+				506C045A1E1482B700B8805E /* Assets.xcassets */,
+				50AEFA5E1E1312B60062FA19 /* Interface.storyboard */,
+				50AEFA631E1312B60062FA19 /* Info.plist */,
+			);
+			path = "React it Watchkit";
+			sourceTree = "<group>";
+		};
+		50AEFA6C1E1312B60062FA19 /* React it Watchkit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				50AEFA711E1312B60062FA19 /* ExtensionDelegate.swift */,
+				50AEFA771E1312B60062FA19 /* Info.plist */,
+				50A777061E20474C005A8787 /* LoginController.swift */,
+				506C045E1E14843800B8805E /* HeartController.swift */,
+				504648B51E18411000B1D73D /* WatchReactionResponseController.swift */,
+				506C045C1E14843800B8805E /* FriendRowController.swift */,
+				506C045D1E14843800B8805E /* GlobalVariables.swift */,
+				506C045F1E14843800B8805E /* InterfaceController.swift */,
+				506C04601E14843800B8805E /* MatchRowController.swift */,
+				506C04611E14843800B8805E /* MomentRowController.swift */,
+				506C046D1E14843800B8805E /* WatchOpinionsController.swift */,
+				506C04651E14843800B8805E /* WatchEmotionsController.swift */,
+				506C04661E14843800B8805E /* WatchMatchesController.swift */,
+				506C04691E14843800B8805E /* WatchMomentsController.swift */,
+				506C04671E14843800B8805E /* WatchMomentController.swift */,
+				506C046A1E14843800B8805E /* WatchMomentSecondController.swift */,
+				506C046B1E14843800B8805E /* WatchMomentThirdController.swift */,
+				506C04681E14843800B8805E /* WatchMomentFourthController.swift */,
+				506C046C1E14843800B8805E /* WatchOpinionResponseController.swift */,
+				506C04641E14843800B8805E /* WatchEmotionResponseController.swift */,
+				506C04591E14812000B8805E /* React it Watchkit Extension.entitlements */,
+				506C04631E14843800B8805E /* testeController.swift */,
+				50AEFA751E1312B60062FA19 /* Assets.xcassets */,
+				50C5F28D1E1485E50002B504 /* NotificationController.swift */,
+				50A777041E1DCDEF005A8787 /* WatchNotificationResponseController.swift */,
+				50EC6C761E2C0B3800E9D8CA /* WatchLoginController.swift */,
+				50AEFA6D1E1312B60062FA19 /* Supporting Files */,
+			);
+			path = "React it Watchkit Extension";
+			sourceTree = "<group>";
+		};
+		50AEFA6D1E1312B60062FA19 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				50AEFA6E1E1312B60062FA19 /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		50BE5B2E1DDB6F8C00132081 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				50BE5B341DDB6F8D00132081 /* Charts.framework */,
+				50BE5B361DDB6F8D00132081 /* ChartsRealm.framework */,
+				50BE5B381DDB6F8D00132081 /* ChartsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		50BE5B451DDB70AF00132081 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				50BE5B501DDB70AF00132081 /* Alamofire.framework */,
+				50BE5B521DDB70AF00132081 /* Alamofire iOS Tests.xctest */,
+				50BE5B541DDB70AF00132081 /* Alamofire.framework */,
+				50BE5B561DDB70AF00132081 /* Alamofire macOS Tests.xctest */,
+				50BE5B581DDB70AF00132081 /* Alamofire.framework */,
+				50BE5B5A1DDB70AF00132081 /* Alamofire tvOS Tests.xctest */,
+				50BE5B5C1DDB70AF00132081 /* Alamofire.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		50EC6C791E2C1E0100E9D8CA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				50EC6C7E1E2C1E0100E9D8CA /* SwiftMessages.framework */,
+				50EC6C801E2C1E0100E9D8CA /* SwiftMessagesTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5000A0731D3BD1B700FB1479 /* React it */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5000A0861D3BD1B700FB1479 /* Build configuration list for PBXNativeTarget "React it" */;
+			buildPhases = (
+				5000A0701D3BD1B700FB1479 /* Sources */,
+				5000A0711D3BD1B700FB1479 /* Frameworks */,
+				5000A0721D3BD1B700FB1479 /* Resources */,
+				501F7A481DD7C945002496AF /* Embed Frameworks */,
+				50CD11851E0737BF001CEFBF /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				50BE5B431DDB700600132081 /* PBXTargetDependency */,
+				50BE5B601DDB70C500132081 /* PBXTargetDependency */,
+				50AEFA791E1312B60062FA19 /* PBXTargetDependency */,
+				50EC6C841E2C1E1900E9D8CA /* PBXTargetDependency */,
+			);
+			name = "React it";
+			productName = ClientPhoneApplication;
+			productReference = 5000A0741D3BD1B700FB1479 /* React it.app */;
+			productType = "com.apple.product-type.application";
+		};
+		50AEFA5B1E1312B60062FA19 /* React it Watchkit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 50AEFA7F1E1312B60062FA19 /* Build configuration list for PBXNativeTarget "React it Watchkit" */;
+			buildPhases = (
+				50AEFA5A1E1312B60062FA19 /* Resources */,
+				50AEFA7E1E1312B60062FA19 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				50AEFA6B1E1312B60062FA19 /* PBXTargetDependency */,
+			);
+			name = "React it Watchkit";
+			productName = "React it Watchkit";
+			productReference = 50AEFA5C1E1312B60062FA19 /* React it Watchkit.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		50AEFA671E1312B60062FA19 /* React it Watchkit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 50AEFA7B1E1312B60062FA19 /* Build configuration list for PBXNativeTarget "React it Watchkit Extension" */;
+			buildPhases = (
+				50AEFA641E1312B60062FA19 /* Sources */,
+				50AEFA651E1312B60062FA19 /* Frameworks */,
+				50AEFA661E1312B60062FA19 /* Resources */,
+				506C04561E14800A00B8805E /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				506C04551E14800A00B8805E /* PBXTargetDependency */,
+			);
+			name = "React it Watchkit Extension";
+			productName = "React it Watchkit Extension";
+			productReference = 50AEFA681E1312B60062FA19 /* React it Watchkit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5000A06C1D3BD1B700FB1479 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Marco Cruz";
+				TargetAttributes = {
+					5000A0731D3BD1B700FB1479 = {
+						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = K2844MSX92;
+						LastSwiftMigration = 0800;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+							com.apple.BackgroundModes = {
+								enabled = 0;
+							};
+							com.apple.GameCenter = {
+								enabled = 0;
+							};
+							com.apple.HealthKit = {
+								enabled = 1;
+							};
+							com.apple.HomeKit = {
+								enabled = 0;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+							com.apple.VPNLite = {
+								enabled = 0;
+							};
+						};
+					};
+					50AEFA5B1E1312B60062FA19 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = K2844MSX92;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					50AEFA671E1312B60062FA19 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = K2844MSX92;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+							com.apple.BackgroundModes.watchos.extension = {
+								enabled = 1;
+							};
+							com.apple.HealthKit.watchos = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 5000A06F1D3BD1B700FB1479 /* Build configuration list for PBXProject "React it" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5000A06B1D3BD1B700FB1479;
+			productRefGroup = 5000A0751D3BD1B700FB1479 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 50BE5B451DDB70AF00132081 /* Products */;
+					ProjectRef = 50BE5B441DDB70AF00132081 /* Alamofire.xcodeproj */;
+				},
+				{
+					ProductGroup = 50BE5B2E1DDB6F8C00132081 /* Products */;
+					ProjectRef = 50BE5B2D1DDB6F8C00132081 /* Charts.xcodeproj */;
+				},
+				{
+					ProductGroup = 50EC6C791E2C1E0100E9D8CA /* Products */;
+					ProjectRef = 50EC6C781E2C1E0100E9D8CA /* SwiftMessages.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				5000A0731D3BD1B700FB1479 /* React it */,
+				50AEFA5B1E1312B60062FA19 /* React it Watchkit */,
+				50AEFA671E1312B60062FA19 /* React it Watchkit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		50BE5B341DDB6F8D00132081 /* Charts.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Charts.framework;
+			remoteRef = 50BE5B331DDB6F8D00132081 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		50BE5B361DDB6F8D00132081 /* ChartsRealm.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ChartsRealm.framework;
+			remoteRef = 50BE5B351DDB6F8D00132081 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		50BE5B381DDB6F8D00132081 /* ChartsTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ChartsTests.xctest;
+			remoteRef = 50BE5B371DDB6F8D00132081 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		50BE5B501DDB70AF00132081 /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = 50BE5B4F1DDB70AF00132081 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		50BE5B521DDB70AF00132081 /* Alamofire iOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Alamofire iOS Tests.xctest";
+			remoteRef = 50BE5B511DDB70AF00132081 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		50BE5B541DDB70AF00132081 /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = 50BE5B531DDB70AF00132081 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		50BE5B561DDB70AF00132081 /* Alamofire macOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Alamofire macOS Tests.xctest";
+			remoteRef = 50BE5B551DDB70AF00132081 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		50BE5B581DDB70AF00132081 /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = 50BE5B571DDB70AF00132081 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		50BE5B5A1DDB70AF00132081 /* Alamofire tvOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Alamofire tvOS Tests.xctest";
+			remoteRef = 50BE5B591DDB70AF00132081 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		50BE5B5C1DDB70AF00132081 /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = 50BE5B5B1DDB70AF00132081 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		50EC6C7E1E2C1E0100E9D8CA /* SwiftMessages.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SwiftMessages.framework;
+			remoteRef = 50EC6C7D1E2C1E0100E9D8CA /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		50EC6C801E2C1E0100E9D8CA /* SwiftMessagesTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = SwiftMessagesTests.xctest;
+			remoteRef = 50EC6C7F1E2C1E0100E9D8CA /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5000A0721D3BD1B700FB1479 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5000A0821D3BD1B700FB1479 /* LaunchScreen.storyboard in Resources */,
+				5017AB281DDD146A00C90332 /* Assets.xcassets in Resources */,
+				50E3065E1DF2081800677717 /* EmotionView.xib in Resources */,
+				5000A07D1D3BD1B700FB1479 /* Main.storyboard in Resources */,
+				50E3065C1DF206DE00677717 /* OpinionView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50AEFA5A1E1312B60062FA19 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				506C045B1E1482B700B8805E /* Assets.xcassets in Resources */,
+				50AEFA601E1312B60062FA19 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50AEFA661E1312B60062FA19 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50AEFA761E1312B60062FA19 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5000A0701D3BD1B700FB1479 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50E3066A1DF238FE00677717 /* NotificationResponseOpinionController.swift in Sources */,
+				5017AB021DDCCF8D00C90332 /* UserController.swift in Sources */,
+				50AEF9E81E12F5780062FA19 /* SCLExtensions.swift in Sources */,
+				5023B76C1D4C096A00FD4458 /* OpinionController.swift in Sources */,
+				50D370A81DD68C0E00AA3057 /* ResponseOpinionController.swift in Sources */,
+				50E306641DF209A900677717 /* OpinionView.swift in Sources */,
+				50D370AC1DD68F3000AA3057 /* ResponseVideoController.swift in Sources */,
+				50A56F8C1E21763B00619A73 /* VideoTesteController.swift in Sources */,
+				50ED522F1E450B5E00909A23 /* MyReactionsController.swift in Sources */,
+				50D370A61DD6865F00AA3057 /* TabBarController.swift in Sources */,
+				50E306661DF209B600677717 /* EmotionView.swift in Sources */,
+				5017AB261DDCFD8900C90332 /* ProfileController.swift in Sources */,
+				50A508D71DD3A71D0062FC01 /* MomentsTableCell.swift in Sources */,
+				50AEF9DC1E12F53B0062FA19 /* SCLAlertView.swift in Sources */,
+				50E3066C1DF23A2600677717 /* NotificationResponseEmotionController.swift in Sources */,
+				50AF4A9D1DCFB39B006B6346 /* EmotionController.swift in Sources */,
+				50D370AA1DD68C2500AA3057 /* ResponseEmotionController.swift in Sources */,
+				506E7B751D60CFC8003D4D67 /* MomentController.swift in Sources */,
+				50FB49ED1DEDD0630096B659 /* GlobalVariables.swift in Sources */,
+				50ED52311E450BCC00909A23 /* MyReactionsCell.swift in Sources */,
+				505A6D5E1DDA72AA0045B38A /* OpinionsEmotionsTableCell.swift in Sources */,
+				50C4E4441DD24B6A00D29CE3 /* MatchesController.swift in Sources */,
+				50BF3F481D4BADB900482E27 /* MomentsController.swift in Sources */,
+				5086DF731DD52969006EE180 /* VideoController.swift in Sources */,
+				50A508D51DD391E50062FC01 /* MatchesTableCell.swift in Sources */,
+				506E7B5F1D57FB99003D4D67 /* Platform.swift in Sources */,
+				50BF3F461D4BAD5400482E27 /* RegisterController.swift in Sources */,
+				5000A0781D3BD1B700FB1479 /* AppDelegate.swift in Sources */,
+				50A6A3FD1E2404C200F6CA96 /* MonitoredMatchesController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50AEFA641E1312B60062FA19 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				506C047D1E14843800B8805E /* WatchMomentThirdController.swift in Sources */,
+				50EC6C771E2C0B3800E9D8CA /* WatchLoginController.swift in Sources */,
+				50A777051E1DCDEF005A8787 /* WatchNotificationResponseController.swift in Sources */,
+				506C04731E14843800B8805E /* MomentRowController.swift in Sources */,
+				506C047F1E14843800B8805E /* WatchOpinionsController.swift in Sources */,
+				506C047E1E14843800B8805E /* WatchOpinionResponseController.swift in Sources */,
+				506C04781E14843800B8805E /* WatchMatchesController.swift in Sources */,
+				506C046E1E14843800B8805E /* FriendRowController.swift in Sources */,
+				506C046F1E14843800B8805E /* GlobalVariables.swift in Sources */,
+				506C047B1E14843800B8805E /* WatchMomentsController.swift in Sources */,
+				506C04721E14843800B8805E /* MatchRowController.swift in Sources */,
+				506C047A1E14843800B8805E /* WatchMomentFourthController.swift in Sources */,
+				50A777071E20474C005A8787 /* LoginController.swift in Sources */,
+				506C04751E14843800B8805E /* testeController.swift in Sources */,
+				504648B61E18411000B1D73D /* WatchReactionResponseController.swift in Sources */,
+				506C04711E14843800B8805E /* InterfaceController.swift in Sources */,
+				50AEFA721E1312B60062FA19 /* ExtensionDelegate.swift in Sources */,
+				50C5F28E1E1485E50002B504 /* NotificationController.swift in Sources */,
+				506C047C1E14843800B8805E /* WatchMomentSecondController.swift in Sources */,
+				506C04771E14843800B8805E /* WatchEmotionsController.swift in Sources */,
+				506C04791E14843800B8805E /* WatchMomentController.swift in Sources */,
+				506C04701E14843800B8805E /* HeartController.swift in Sources */,
+				506C04761E14843800B8805E /* WatchEmotionResponseController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		506C04551E14800A00B8805E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Alamofire watchOS";
+			targetProxy = 506C04541E14800A00B8805E /* PBXContainerItemProxy */;
+		};
+		50AEFA6B1E1312B60062FA19 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 50AEFA671E1312B60062FA19 /* React it Watchkit Extension */;
+			targetProxy = 50AEFA6A1E1312B60062FA19 /* PBXContainerItemProxy */;
+		};
+		50AEFA791E1312B60062FA19 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 50AEFA5B1E1312B60062FA19 /* React it Watchkit */;
+			targetProxy = 50AEFA781E1312B60062FA19 /* PBXContainerItemProxy */;
+		};
+		50BE5B431DDB700600132081 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Charts;
+			targetProxy = 50BE5B421DDB700600132081 /* PBXContainerItemProxy */;
+		};
+		50BE5B601DDB70C500132081 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Alamofire iOS";
+			targetProxy = 50BE5B5F1DDB70C500132081 /* PBXContainerItemProxy */;
+		};
+		50EC6C841E2C1E1900E9D8CA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftMessages;
+			targetProxy = 50EC6C831E2C1E1900E9D8CA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5000A07B1D3BD1B700FB1479 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5000A07C1D3BD1B700FB1479 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5000A0801D3BD1B700FB1479 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5000A0811D3BD1B700FB1479 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		50AEFA5E1E1312B60062FA19 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				50AEFA5F1E1312B60062FA19 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5000A0841D3BD1B700FB1479 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Marco Cruz (J9648DMGYM)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Marco Cruz (J9648DMGYM)";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = M693NZY77D;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "4433be41-c117-4cc7-8041-a785138bcac5";
+				PROVISIONING_PROFILE_SPECIFIER = "OpinionShare Development Profile";
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5000A0851D3BD1B700FB1479 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = M693NZY77D;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "OpinionShare Development Profile";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5000A0871D3BD1B700FB1479 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "React it/OpinionSharePhone.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Marco Cruz (W7G5WNNEYG)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				INFOPLIST_FILE = "React it/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = pt.marco.ReactIt;
+				PRODUCT_NAME = "React it";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = iphoneos;
+				SWIFT_DISABLE_SAFETY_CHECKS = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		5000A0881D3BD1B700FB1479 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "React it/OpinionSharePhone.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Marco Cruz (W7G5WNNEYG)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				INFOPLIST_FILE = "React it/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = pt.marco.ReactIt;
+				PRODUCT_NAME = "React it";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = iphoneos;
+				SWIFT_DISABLE_SAFETY_CHECKS = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		50AEFA7C1E1312B60062FA19 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CODE_SIGN_ENTITLEMENTS = "React it Watchkit Extension/React it Watchkit Extension.entitlements";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = K2844MSX92;
+				INFOPLIST_FILE = "React it Watchkit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = pt.marco.ReactIt.watchkitapplication.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Debug;
+		};
+		50AEFA7D1E1312B60062FA19 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CODE_SIGN_ENTITLEMENTS = "React it Watchkit Extension/React it Watchkit Extension.entitlements";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = K2844MSX92;
+				INFOPLIST_FILE = "React it Watchkit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = pt.marco.ReactIt.watchkitapplication.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Release;
+		};
+		50AEFA801E1312B60062FA19 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CODE_SIGN_ENTITLEMENTS = "React it Watchkit/React it Watchkit.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Marco Cruz (J9648DMGYM)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = K2844MSX92;
+				IBSC_MODULE = React_it_Watchkit_Extension;
+				INFOPLIST_FILE = "React it Watchkit/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = pt.marco.ReactIt.watchkitapplication;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Debug;
+		};
+		50AEFA811E1312B60062FA19 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CODE_SIGN_ENTITLEMENTS = "React it Watchkit/React it Watchkit.entitlements";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = K2844MSX92;
+				IBSC_MODULE = React_it_Watchkit_Extension;
+				INFOPLIST_FILE = "React it Watchkit/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = pt.marco.ReactIt.watchkitapplication;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5000A06F1D3BD1B700FB1479 /* Build configuration list for PBXProject "React it" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5000A0841D3BD1B700FB1479 /* Debug */,
+				5000A0851D3BD1B700FB1479 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5000A0861D3BD1B700FB1479 /* Build configuration list for PBXNativeTarget "React it" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5000A0871D3BD1B700FB1479 /* Debug */,
+				5000A0881D3BD1B700FB1479 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		50AEFA7B1E1312B60062FA19 /* Build configuration list for PBXNativeTarget "React it Watchkit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50AEFA7C1E1312B60062FA19 /* Debug */,
+				50AEFA7D1E1312B60062FA19 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		50AEFA7F1E1312B60062FA19 /* Build configuration list for PBXNativeTarget "React it Watchkit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50AEFA801E1312B60062FA19 /* Debug */,
+				50AEFA811E1312B60062FA19 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5000A06C1D3BD1B700FB1479 /* Project object */;
+}
