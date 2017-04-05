@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:Video generator/Video generator.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Thumbnail Generator/Thumbnail Generator.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:TV/TV.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:React it/React it.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:PerfectTemplate/PerfectTemplate.xcodeproj">
+   </FileRef>
+</Workspace>
