@@ -1,0 +1,5 @@
+version: "Apple Swift version 3.0.2 (swiftlang-800.0.63 clang-800.0.42.1)"
+options: "f6df35ad9cd8bb2e1f8c63dffa8b9c60"
+build_time: [536770710, 612021000]
+inputs:
+  "/Users/marcocruz/Desktop/XCode/PerfectTemplate/Packages/PerfectNotifications-2.0.1/Sources/NotificationPusher.swift": [536770672, 0]

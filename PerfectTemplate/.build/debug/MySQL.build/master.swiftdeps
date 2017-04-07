@@ -1,0 +1,5 @@
+version: "Apple Swift version 3.0.2 (swiftlang-800.0.63 clang-800.0.42.1)"
+options: "a9f3f66c992fd0cb50d6d40122ef92db"
+build_time: [537159581, 574500000]
+inputs:
+  "/Users/marcocruz/Desktop/XCode/PerfectTemplate/Packages/MySQL-2.0.4/Sources/MySQL/MySQL.swift": [536770667, 0]

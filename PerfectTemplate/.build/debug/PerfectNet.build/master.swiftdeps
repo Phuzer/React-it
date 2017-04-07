@@ -1,0 +1,9 @@
+version: "Apple Swift version 3.0.2 (swiftlang-800.0.63 clang-800.0.42.1)"
+options: "00d6de10e37b09b353b725e5b0aabdd7"
+build_time: [536770703, 210860000]
+inputs:
+  "/Users/marcocruz/Desktop/XCode/PerfectTemplate/Packages/PerfectNet-2.0.5/Sources/Net.swift": [536770635, 0]
+  "/Users/marcocruz/Desktop/XCode/PerfectTemplate/Packages/PerfectNet-2.0.5/Sources/NetEvent.swift": [536770635, 0]
+  "/Users/marcocruz/Desktop/XCode/PerfectTemplate/Packages/PerfectNet-2.0.5/Sources/NetNamedPipe.swift": [536770635, 0]
+  "/Users/marcocruz/Desktop/XCode/PerfectTemplate/Packages/PerfectNet-2.0.5/Sources/NetTCP.swift": [536770635, 0]
+  "/Users/marcocruz/Desktop/XCode/PerfectTemplate/Packages/PerfectNet-2.0.5/Sources/NetTCPSSL.swift": [536770635, 0]

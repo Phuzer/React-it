@@ -1,0 +1,11 @@
+{
+  "": {
+    "swift-dependencies": "/Users/marcocruz/Desktop/XCode/PerfectTemplate/.build/debug/PerfectNotifications.build/master.swiftdeps"
+  },
+  "/Users/marcocruz/Desktop/XCode/PerfectTemplate/Packages/PerfectNotifications-2.0.1/Sources/NotificationPusher.swift": {
+    "dependencies": "/Users/marcocruz/Desktop/XCode/PerfectTemplate/.build/debug/PerfectNotifications.build/NotificationPusher.d",
+    "object": "/Users/marcocruz/Desktop/XCode/PerfectTemplate/.build/debug/PerfectNotifications.build/NotificationPusher.swift.o",
+    "swiftmodule": "/Users/marcocruz/Desktop/XCode/PerfectTemplate/.build/debug/PerfectNotifications.build/NotificationPusher~partial.swiftmodule",
+    "swift-dependencies": "/Users/marcocruz/Desktop/XCode/PerfectTemplate/.build/debug/PerfectNotifications.build/NotificationPusher.swiftdeps"
+  }
+}
