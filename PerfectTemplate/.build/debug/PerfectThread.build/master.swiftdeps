@@ -1,6 +1,0 @@
-version: "Apple Swift version 3.0.2 (swiftlang-800.0.63 clang-800.0.42.1)"
-options: "250abd9f45d977426de0196bdab2a2c1"
-build_time: [537159581, 574490000]
-inputs:
-  "/Users/marcocruz/Desktop/XCode/PerfectTemplate/Packages/PerfectThread-2.0.4/Sources/Threading.swift": [536770658, 0]
-  "/Users/marcocruz/Desktop/XCode/PerfectTemplate/Packages/PerfectThread-2.0.4/Sources/ThreadQueue.swift": [536770658, 0]
