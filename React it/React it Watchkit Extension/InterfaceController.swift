@@ -253,7 +253,7 @@ class InterfaceController: WKInterfaceController {
         })
     }
     
-    override func handleAction(withIdentifier identifier: String?, for notification: UNNotification) {
+    func handleAction(notification: UNNotification) {
         
         
         if(!globalvariable.aux_notification_control){

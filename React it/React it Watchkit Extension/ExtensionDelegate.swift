@@ -9,8 +9,9 @@
 import WatchKit
 import WatchConnectivity
 import HealthKit
+import UserNotifications
 
-class ExtensionDelegate: NSObject, WKExtensionDelegate, WCSessionDelegate , HKWorkoutSessionDelegate{
+class ExtensionDelegate: NSObject, WKExtensionDelegate, WCSessionDelegate , HKWorkoutSessionDelegate, UNUserNotificationCenterDelegate{
     
     var session : WCSession!
     let healthStore = HKHealthStore()
@@ -22,6 +23,15 @@ class ExtensionDelegate: NSObject, WKExtensionDelegate, WCSessionDelegate , HKWo
 
     func applicationDidFinishLaunching() {
         // Perform any final initialization of your application.
+        UNUserNotificationCenter.current().delegate = self
+    }
+    
+    func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
+        if let controller = WKExtension.shared().rootInterfaceController as? InterfaceController {
+            // Call to a custom method in the root interface controller to handle the notification
+            controller.handleAction(notification: response.notification)
+            completionHandler()
+        }
     }
     
     func startHeartMonitoring(){
