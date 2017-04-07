@@ -28,13 +28,6 @@ let server = HTTPServer()
 
 // Register your own routes and handlers
 var routes = Routes()
-/*routes.add(method: .get, uri: "/", handler: {
-		request, response in
-		response.setHeader(.contentType, value: "text/html")
-		response.appendBody(string: "<html><title>Hello, world!</title><body>Hello, world!</body></html>")
-		response.completed()
-	}
-)*/
 
 //This route will be used to fetch data from the mysql database
 routes.add(method: .get, uri: "/startvideo", handler: StartVideo)

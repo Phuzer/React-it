@@ -11,6 +11,9 @@ import AVKit
 import AVFoundation
 
 class ViewController: UIViewController {
+    
+    var videoPath = "/Users/marcocruz/Desktop/XCode/TV/Sweden-Portugal.mp4"
+    var thumbnailsDestinationPath = "/Library/WebServer/Documents/Thumbnails-Portugal-Sweden"
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,11 +23,12 @@ class ViewController: UIViewController {
     }
     
     func generateThumbnails(){
-        let sourceURL = URL(fileURLWithPath: "/Users/marcocruz/Desktop/XCode/TV/Sweden-Portugal.mp4")
+        let sourceURL = URL(fileURLWithPath: videoPath)
         let asset: AVAsset = AVAsset(url: sourceURL)
         var milliseconds = Int64(1000)
-        let totalDuration = Int64(asset.duration.value)
+        let totalDuration = Int64(asset.duration.seconds * 1000)
         var count = 0
+        
         while(milliseconds < totalDuration){
             let assetImgGenerate : AVAssetImageGenerator = AVAssetImageGenerator(asset: asset)
             assetImgGenerate.appliesPreferredTrackTransform = true
@@ -34,7 +38,7 @@ class ViewController: UIViewController {
                 try img = assetImgGenerate.copyCGImage(at: time, actualTime: nil)
                 let frameImg: UIImage = UIImage(cgImage: img)
                 let newImage: UIImage = resizeImage(frameImg)
-                let filePath = "/Library/WebServer/Documents/Thumbnails-Portugal-Sweden/\(milliseconds).jpeg"
+                let filePath = "\(thumbnailsDestinationPath)/\(milliseconds).jpeg"
                 try? UIImageJPEGRepresentation(newImage, 1.0)!.write(to: URL(fileURLWithPath: filePath), options: [.atomic])
             } catch { }
             milliseconds = milliseconds + 1000

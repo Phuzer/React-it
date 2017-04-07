@@ -22,6 +22,10 @@ let database = "OpinionShare"
 typealias TrimCompletion = (NSError?) -> ()
 typealias TrimPoints = [(CMTime, CMTime)]
 
+var videoSegmentsPath = "/Library/WebServer/Documents/Portugal-Sweden"
+var sourceVideoPath = "/Users/marcocruz/Desktop/XCode/TV/Sweden-Portugal.mp4"
+var thumbnailsPath = "/Library/WebServer/Documents/Thumbnails-Portugal-Sweden"
+
 var videoStatus = "offline"
 var videoStartTime: Date?
 var millisecondsAhead: Int = 0
@@ -72,9 +76,8 @@ public func GetVideo(_ request: HTTPRequest, response: HTTPResponse)
 {
     let milliseconds = Int(request.param(name: "milliseconds")!)!
     
-    let docRoot = "/Library/WebServer/Documents/Portugal-Sweden"
     do {
-        let trimmedVideo = File("\(docRoot)/Video\(milliseconds).mp4")
+        let trimmedVideo = File("\(videoSegmentsPath!)/Video\(milliseconds).mp4")
         let videoSize = trimmedVideo.size
         let videoBytes = try trimmedVideo.readSomeBytes(count: videoSize)
         response.addHeader(.contentType, value: "video/mp4")
@@ -564,10 +567,10 @@ func saveVideo(milliseconds: Int)
     typealias TrimCompletion = (NSError?) -> ()
     typealias TrimPoints = [(CMTime, CMTime)]
     
-    let sourceURL = NSURL(fileURLWithPath: "/Users/marcocruz/Desktop/XCode/TV/Sweden-Portugal.mp4")
-    let destinationURL = NSURL(fileURLWithPath: "/Library/WebServer/Documents/Portugal-Sweden/Video\(milliseconds).mp4")
-    let sourceURLWatch = NSURL(fileURLWithPath: "/Users/marcocruz/Desktop/XCode/TV/Sweden-Portugal_watch.mp4")
-    let destinationURLWatch = NSURL(fileURLWithPath: "/Library/WebServer/Documents/Portugal-Sweden-Watch/Video\(milliseconds).mp4")
+    let sourceURL = NSURL(fileURLWithPath: sourceVideoPath!)
+    let destinationURL = NSURL(fileURLWithPath: "\(videoSegmentsPath!)/Video\(milliseconds).mp4")
+    //let sourceURLWatch = NSURL(fileURLWithPath: "/Users/marcocruz/Desktop/XCode/TV/Sweden-Portugal_watch.mp4")
+    //let destinationURLWatch = NSURL(fileURLWithPath: "/Library/WebServer/Documents/Portugal-Sweden-Watch/Video\(milliseconds).mp4")
     
     let timeScale: Int32 = 1000
     
@@ -579,12 +582,6 @@ func saveVideo(milliseconds: Int)
     }
     
     let trimPoints = [(CMTimeMake(Int64(startTime), timeScale), CMTimeMake(Int64(endTime), timeScale))]
-    
-    /*if #available(OSX 10.11, *) {
-        cropVideo(sourceURL: sourceURL, statTime: 10.0, endTime: 20.0, milliseconds: milliseconds)
-    } else {
-        // Fallback on earlier versions
-    }*/
     
     let backgroundQueue = DispatchQueue(label: "com.app.queuetrimvideo",
                                         qos: .background,
@@ -600,7 +597,7 @@ func saveVideo(milliseconds: Int)
         }
     }
     
-    let backgroundQueueWatch = DispatchQueue(label: "com.app.queuetrimvideowatch",
+    /*let backgroundQueueWatch = DispatchQueue(label: "com.app.queuetrimvideowatch",
                                         qos: .background,
                                         target: nil)
     backgroundQueueWatch.async{
@@ -612,7 +609,7 @@ func saveVideo(milliseconds: Int)
             }
             
         }
-    }
+    }*/
     
 }
 
@@ -1251,9 +1248,8 @@ public func GetThumbnail(_ request: HTTPRequest, response: HTTPResponse)
 {
     let milliseconds = Int(request.param(name: "milliseconds")!)!
     
-    let docRoot = "/Library/WebServer/Documents/Thumbnails-Portugal-Sweden"
     do {
-        let img = File("\(docRoot)/\(milliseconds).jpeg")
+        let img = File("\(thumbnailsPath!)/\(milliseconds).jpeg")
         let imageSize = img.size
         let imageBytes = try img.readSomeBytes(count: imageSize)
         response.addHeader(.contentType, value: "image/jpeg")
@@ -1443,12 +1439,11 @@ func trimVideo(sourceURL: NSURL, destinationURL: NSURL, trimPoints: TrimPoints, 
     }
 }
 
-//----------------------------------------------------------------------------------------------//
+//---------------------------------------------- METHOD FOR TEST PURPOSES ------------------------------------------------//
 
 @available(OSX 10.11, *)
 func cropVideo(sourceURL: NSURL, statTime:Float, endTime:Float, milliseconds: Int)
 {
-    
     
     //let sourceURL = NSURL(fileURLWithPath: "/Users/marcocruz/Desktop/XCode/TV/Portugal-vs-Sweden-Mobile.mp4")
     let destinationURL = NSURL(fileURLWithPath: "/Library/WebServer/Documents/Portugal-Sweden/testeVideo\(milliseconds).mp4")

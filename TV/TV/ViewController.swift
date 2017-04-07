@@ -19,6 +19,8 @@ class ViewController: NSViewController{
     var timer = Timer()
     var goalIntervals = [Bool]()
     
+    var server = "http://marcomacpro.local:8181"
+    
     @IBOutlet weak var status: NSTextField!
     @IBOutlet weak var playerView: AVPlayerView!
     
@@ -52,7 +54,7 @@ class ViewController: NSViewController{
         NotificationCenter.default.addObserver(self, selector: #selector(ViewController.playerDidFinishPlaying),name: NSNotification.Name.AVPlayerItemDidPlayToEndTime, object: playerItem)
         
         //Alert the server that the video started
-        Alamofire.request("http://marcomacpro.local:8181/startvideo")
+        Alamofire.request("\(server)/startvideo")
             .validate()
             .responseData { response in
                 switch response.result{
@@ -70,7 +72,7 @@ class ViewController: NSViewController{
     }
     
     func playerDidFinishPlaying(){
-        Alamofire.request("http://marcomacpro.local:8181/endvideo")
+        Alamofire.request("\(server)/endvideo")
             .validate()
             .responseData { response in
                 switch response.result{
@@ -92,7 +94,7 @@ class ViewController: NSViewController{
         
         var timer = Int(videoPlayer.currentTime().seconds)
         
-        alamofire.request("http://marcomacpro.local:8181/setvideotimer", method: .get, parameters: ["milliseconds": timer * 1000]).validate()
+        alamofire.request("\(server)/setvideotimer", method: .get, parameters: ["milliseconds": timer * 1000]).validate()
             .responseData { response in
                 switch response.result{
                 case .success(let data):
@@ -116,7 +118,7 @@ class ViewController: NSViewController{
         configuration.timeoutIntervalForRequest = 30
         let alamofire = Alamofire.SessionManager(configuration: configuration)
         
-        alamofire.request("http://marcomacpro.local:8181/setscores", method: .get, parameters: ["match_id": 1, "home_score": home_score, "visitor_score": visitor_score]).validate()
+        alamofire.request("\(server)/setscores", method: .get, parameters: ["match_id": 1, "home_score": home_score, "visitor_score": visitor_score]).validate()
             .responseData { response in
                 switch response.result{
                 case .success(let data):
