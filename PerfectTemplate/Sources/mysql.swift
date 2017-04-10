@@ -35,7 +35,7 @@ var realTimers = [[Int]]()
 var firstTimeRunning = true
 var pushNotificationsHandler:PushNotificationsHandler!
 
-var userTestNumber: Int = 13
+var userTestNumber: Int = 14
 
 func updateNotifications(){
     
@@ -77,7 +77,7 @@ public func GetVideo(_ request: HTTPRequest, response: HTTPResponse)
     let milliseconds = Int(request.param(name: "milliseconds")!)!
     
     do {
-        let trimmedVideo = File("\(videoSegmentsPath!)/Video\(milliseconds).mp4")
+        let trimmedVideo = File("\(videoSegmentsPath)/Video\(milliseconds).mp4")
         let videoSize = trimmedVideo.size
         let videoBytes = try trimmedVideo.readSomeBytes(count: videoSize)
         response.addHeader(.contentType, value: "video/mp4")
@@ -567,8 +567,8 @@ func saveVideo(milliseconds: Int)
     typealias TrimCompletion = (NSError?) -> ()
     typealias TrimPoints = [(CMTime, CMTime)]
     
-    let sourceURL = NSURL(fileURLWithPath: sourceVideoPath!)
-    let destinationURL = NSURL(fileURLWithPath: "\(videoSegmentsPath!)/Video\(milliseconds).mp4")
+    let sourceURL = NSURL(fileURLWithPath: sourceVideoPath)
+    let destinationURL = NSURL(fileURLWithPath: "\(videoSegmentsPath)/Video\(milliseconds).mp4")
     //let sourceURLWatch = NSURL(fileURLWithPath: "/Users/marcocruz/Desktop/XCode/TV/Sweden-Portugal_watch.mp4")
     //let destinationURLWatch = NSURL(fileURLWithPath: "/Library/WebServer/Documents/Portugal-Sweden-Watch/Video\(milliseconds).mp4")
     
@@ -1249,7 +1249,7 @@ public func GetThumbnail(_ request: HTTPRequest, response: HTTPResponse)
     let milliseconds = Int(request.param(name: "milliseconds")!)!
     
     do {
-        let img = File("\(thumbnailsPath!)/\(milliseconds).jpeg")
+        let img = File("\(thumbnailsPath)/\(milliseconds).jpeg")
         let imageSize = img.size
         let imageBytes = try img.readSomeBytes(count: imageSize)
         response.addHeader(.contentType, value: "image/jpeg")
